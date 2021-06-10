@@ -1,0 +1,48 @@
+/* Theme Support for Discord Addons
+ *
+ * Theme Support is used to make sure that your theme files are correct and updated, and also not to have to paste the same code in each theme.
+ * This file is automatically imported if you are using one of Discord Addons themes.
+ * It should work with every themes in the "Tomrdh/discord-addons" GitHub repository.
+ * You shouldn't import this file in your themes, unless you know exactly what it's doing and you make a copy of this file which you can edit on your own.
+ */
+
+@import url(https://github.com/DRA6N/EliteDiscord/blob/main/userPopouts.css); /* All my themes support USRBG popouts */
+
+:root {
+    --theme-name: "The theme name is Unknown, please report. - Something"; /* Default value if the theme name is not set. */
+}
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div.base-3dtUhz:before {
+    content: var(--theme-name)" is broken or outdated! Please redownload the theme!" !important;
+    display: block; /* Default value if the theme does not have this display property. */
+    background-color: #3e82e5;
+    color: #fff;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    height: auto;
+    line-height: 16px;
+    opacity: 1;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    text-align: center;
+    visibility: unset;
+    white-space: pre-wrap;
+    top: 0;
+    left: 0;
+    bottom: unset;
+    right: unset;
+    max-width: unset;
+    min-width: unset;
+    max-height: unset;
+    min-height: unset;
+    transform: unset;
+    animation: unset;
+    z-index: 101;
+    pointer-events: none;
+}
+.platform-win #app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div:before {
+    border-top-left-radius: 6px;
+}
